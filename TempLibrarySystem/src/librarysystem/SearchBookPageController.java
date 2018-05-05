@@ -130,12 +130,10 @@ public class SearchBookPageController extends Switchable implements Initializabl
                 selectMenuItem(event);                          
                 //searchBook(searchButton.getText());
             });
-         
-        }
-        
-        searchButton.setOnAction((ActionEvent event) ->{
+            searchButton.setOnAction((ActionEvent event) ->{
                 searchBook(searchButton.getText());
-        });
+            });
+        }
         
         borrowButton.setOnAction((ActionEvent event) -> {
             clickBorrowButton();
@@ -190,7 +188,6 @@ public class SearchBookPageController extends Switchable implements Initializabl
             sql = "UPDATE BooksInfo SET historyBorrowTimes = " + (historyBorrowTimes1 + 1) +" WHERE name = '" + bookName + "';";
             stmt.executeUpdate(sql);//update historyBorrowTimes
             
-            
             String time = getLocalTime();
             sql = "UPDATE BooksInfo SET lastBorrowTime = '" + time +"' WHERE name = '" + bookName + "';";
             stmt.executeUpdate(sql);//update new time 
@@ -216,7 +213,6 @@ public class SearchBookPageController extends Switchable implements Initializabl
             
             rs = stmt.executeQuery( "SELECT book5 FROM StudentHoldBook WHERE pawPrint = '"+ tempPawPrint +"'; " );
             System.out.println(rs.getString("book5"));
-            
             
             time = getLocalTime();
             sql = "UPDATE Student SET lastBorrowTime = '" + time +"'  WHERE pawPrint = '"+ tempPawPrint +"'; ";

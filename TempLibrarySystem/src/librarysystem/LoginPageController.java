@@ -27,11 +27,6 @@ public class LoginPageController extends Switchable implements Initializable,Paw
     private String pawPrint = null;
     private String password = null;
     
-    /*
-    private Stage stage;
-    private Scene loginPageScene;
-    private Scene studentSystemPageScene;
-    private StudentSystemPageController studentSystemPageController;*/
     
     @FXML
     private Label displayErrorLabel;
