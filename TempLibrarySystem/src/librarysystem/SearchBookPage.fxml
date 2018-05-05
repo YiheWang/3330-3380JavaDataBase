@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarysystem.SearchBookPageController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#backToFormerPage" prefHeight="39.0" prefWidth="127.0" text="BackToFormerPage" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="57.0" prefHeight="284.0" prefWidth="868.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="43.0" text="id" />
+            <TableColumn fx:id="name" prefWidth="157.0" text="Name" />
+            <TableColumn fx:id="author" prefWidth="75.0" text="Author" />
+          <TableColumn fx:id="category" prefWidth="100.0" text="Category" />
+          <TableColumn fx:id="price" prefWidth="54.0" text="Price($)" />
+            <TableColumn fx:id="sumNumber" prefWidth="45.0" text="SN" />
+            <TableColumn fx:id="nowNumber" prefWidth="41.0" text="NN" />
+            <TableColumn fx:id="historyBorrowTimes" prefWidth="55.0" text="HBT" />
+            <TableColumn fx:id="ifReadOnly" prefWidth="73.0" text="IfReadOnly" />
+            <TableColumn fx:id="lastBorrowTime" prefWidth="139.0" text="LastBorrowTime" />
+            <TableColumn fx:id="library" prefWidth="85.0" text="Library" />
+        </columns>
+      </TableView>
+      <MenuBar layoutX="333.0" layoutY="7.0" prefHeight="32.0" prefWidth="115.0">
+        <menus>
+          <Menu fx:id="searchChoicesMenu" mnemonicParsing="false" text="SearchChoices">
+            <items>
+                  <MenuItem fx:id="searchById" mnemonicParsing="false" text="searchById" />
+                  <MenuItem fx:id="searchByName" mnemonicParsing="false" text="searchByName" />
+              <MenuItem fx:id="searchByCategory" mnemonicParsing="false" text="searchByCategory" />
+                  <MenuItem fx:id="searchByAuthor" mnemonicParsing="false" text="searchByAuthor" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="searchText" layoutX="467.0" layoutY="7.0" prefHeight="32.0" prefWidth="293.0" />
+      <Button fx:id="searchButton" layoutX="773.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="81.0" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="borrowText" layoutX="250.0" layoutY="367.0" prefHeight="32.0" prefWidth="215.0" />
+      <Label layoutX="85.0" layoutY="367.0" prefHeight="32.0" prefWidth="155.0" text="Enter the book name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="borrowButton" layoutX="484.0" layoutY="367.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="ClickToBorrowBook" />
+      <Label fx:id="emptyNotice" layoutX="268.0" layoutY="408.0" prefHeight="39.0" prefWidth="167.0" />
+      <Label layoutX="667.0" layoutY="372.0" prefHeight="23.0" prefWidth="186.0" text="SN is SumNumber" />
+      <Label layoutX="667.0" layoutY="405.0" prefHeight="23.0" prefWidth="167.0" text="NN is NowNumber" />
+      <Label layoutX="667.0" layoutY="436.0" prefHeight="23.0" prefWidth="167.0" text="HBT is HistoryBorrowTimes" />
+      <Label layoutX="667.0" layoutY="341.0" prefHeight="23.0" prefWidth="43.0" text="Tips :" />
+   </children>
+</AnchorPane>
