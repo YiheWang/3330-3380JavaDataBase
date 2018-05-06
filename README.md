@@ -37,7 +37,7 @@ SystemOperation
 ================
 log in account: ywm46, 31415926aaaa
 
-		ylmq3, 31415926aaaa
+ylmq3, 31415926aaaa
 		
 you can check the file SQLiteInsertData.java   to check the insert information
 
@@ -181,5 +181,5 @@ https://github.com/YiheWang/3330-3380JavaDataBase/blob/Modified/WeChat%20Image_2
 
 
 Youtube url:
-https://youtu.be/cPPxQEJ5_kU
+https://youtu.be/Vxh6dtziltU
 
