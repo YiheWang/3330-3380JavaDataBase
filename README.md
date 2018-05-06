@@ -33,6 +33,12 @@ Technology Stack
 Language: JavaFXML
 database: SQLite
 
+SystemOperation
+================
+log in account: ywm46, 31415926aaaa
+		ylmq3, 31415926aaaa
+you can check the file SQLiteInsertData.java   to check the insert information
+
 
 Table
 ================
