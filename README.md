@@ -1,5 +1,5 @@
 # 3330-3380JavaDataBase
-Final Project for CS3330&CS3380 in University of Missouri
+Final Project for CS3330&CS3380 in University of Missouri<br>
 A student library system
 
 
